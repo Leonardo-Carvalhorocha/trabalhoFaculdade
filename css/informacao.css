@@ -1,0 +1,125 @@
+.main-bg {
+  background: #1E1C1C;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ align-items: center;
+  gap: 100px;
+}
+
+.main-container h1 {
+  color: #e0e0e0;
+  font-family: "Fira Sans";
+  font-weight: 43.75rem;
+  font-size: 4rem;
+  line-height: 4.375rem;
+  position: relative;
+  z-index: 1;
+}
+
+.main-container h1::before {
+  content: "";
+  background: url("../img/detalhe-titulo.svg") no-repeat center;
+  width: 6.25rem;
+  height: 6.25rem;
+  display: block;
+  position: absolute;
+  top: -1.5rem;
+  left: -1rem;
+  z-index: -1;
+}
+
+.main-container h1 span {
+ color: #61a0db; 
+}
+
+.botao-container {
+  display: grid;
+  grid-template-columns: 10rem 10rem;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.botao-container li a {
+  font-family: "Fira Sans";
+  text-align: center;
+  font-weight: 600;
+  margin-top: 0.63rem;
+  text-transform: uppercase;
+  color: #072C4F;
+  padding: 1.5rem 4rem;
+  background: linear-gradient(180deg, #519EE7 0%, #21619D 100%);
+  border-radius: 0.2rem;
+  transition: .4s;
+}
+
+.botao-container li a:hover {
+ transform: scale(110%);
+}
+
+@media (max-width:1100px) {
+  .main-container {
+    gap: 0px;
+  }
+}
+
+@media (max-width:1000px) {
+  .main-bg {
+    height: 100%;
+   padding-bottom: 60px;
+  }
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .main-container h1 {
+    font-size: 3rem;
+    line-height: 1;
+    text-align: center;
+  }
+  .main-container h1::before {
+    top: -2rem;
+    left: 1rem;
+  }
+}
+
+@media (max-width:500px) {
+  .main-container h1 {
+    font-size: 2.5rem;
+    line-height: 1;
+    text-align: center;
+  }
+  .main-container h1::before {
+    top: -2rem;
+    left: 0.5rem;
+  }
+  .botao-container li a{
+    padding: 1rem 3rem;
+    text-align: center;
+  }
+  .botao-container {
+    gap: 0;
+  }
+}
+
+@media (max-width:300px) {
+  .main-container h1 {
+    font-size: 2rem;
+  }
+  .main-container h1::before {
+    top: -2.5rem;
+    left: 1.5rem;
+  }
+  .botao-container {
+    grid-template-columns: 1fr;
+  }
+  .botao-container li a {
+    padding: 1rem 0.7rem;
+  }
+}

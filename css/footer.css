@@ -1,0 +1,149 @@
+.footer-bg {
+  background: #000000;
+  padding-top: 6.25rem;
+  border-top: 0.125rem solid #61a0db;
+  position: relative;
+}
+
+.footer-container {
+  max-width: 75rem;
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+}
+
+.footer-bg h1::after {
+  content: "";
+  background: url("../img/detalhe-titulo.svg") no-repeat center;
+  height: 6.25rem;
+  width: 6.25rem;
+  display: inline-block;
+  position: absolute;
+  top: -3.75rem;
+  left: 0px;
+}
+
+.footer-container > h1 {
+  font-size: 2.5rem;
+}
+
+.footer-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.75rem;  
+  text-align: center;
+  padding-bottom: 0 0.93rem 2.5rem 0.93rem;
+  justify-content: center;
+}
+
+.footer-lista h2 {
+  font-family: "Fira Sans";
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.footer-lista p, .direitos {
+  font-family: "Fira Sans";
+  font-size: 1.2rem;
+  color: #7d7a7a;
+}
+
+.img{
+ margin: 0 auto;
+ margin-bottom: 0.62rem;
+ transition: .3s ease-in-out;
+}
+
+.img:hover {
+  transform: scale(120%);
+}
+
+.direitos {
+  padding-top: 3rem;
+  padding-bottom: 2.5rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.nav-fixed {
+  position: fixed;
+  bottom: 0px;
+  right: 140px;
+}
+
+.nav-fixed img {
+  transition: .2s ease-in-out;
+}
+
+
+.nav-fixed::before {
+  content: '';
+  width: 4px;
+  height: 150px;
+  display: inline-block;
+  background: #61a0db;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.nav-fixed::after {
+  content: '';
+  width: 4px;
+  height: 40px;
+  display: inline-block;
+  background: #61a0db;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.nav-fixed ul li {
+  margin-bottom: 15px;
+}
+
+.nav-fixed img:hover {
+  transform: scale(115%);
+}
+
+.nav-whats {
+  display: none;
+}
+
+@media (max-width: 1500px) {
+  .nav-fixed {
+    right: 20px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .nav-fixed {
+    display: none;
+  }
+  .nav-whats {
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    right: 0px;
+    padding: 10px;
+  }
+  .nav-whats img {
+    transition: .2s ease-in-out;
+  }
+  .nav-whats ul li {
+    margin-bottom: 15px;
+  }
+  .nav-whats img:hover {
+    transform: scale(115%);
+  }
+}
+
+
+@media (max-width: 400px){
+  .footer-bg {
+    padding-top: 1.25rem;
+  }
+  .footer-container > h1 {
+    font-size: 30px;
+  }
+}
+

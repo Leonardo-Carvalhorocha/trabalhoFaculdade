@@ -1,0 +1,42 @@
+.section-bg {
+  padding-top: 12.5rem;
+  background: #1E1C1C;
+}
+
+.section-container {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.section-container ul{
+  padding: 0 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 1.25rem;
+  justify-content: center;
+  align-items: center;
+  gap: 3.75rem;
+}
+
+.section-container ul li {  
+  padding: 1rem;
+  background-color: #61a0db17; 
+  border-radius: 1.87rem 0 0 0;  
+  border-bottom: 4px solid #1572B6;
+}
+
+.habilidades {
+  position: relative;
+}
+
+.habilidades h1::after {
+  content: "";
+  background: url("../img/SKILLS.svg") no-repeat center;
+  width: 12.5rem;
+  height: 3rem;
+  display: inline-block;
+  position: absolute;
+  margin-left: -15rem;
+  top: -1.56rem;
+}
+
